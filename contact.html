@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Escuela ABC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="styles.css"> <!-- Estilo personalizado -->
+    <style>
+        body {
+            background-color: #f5f5f5; /* Fondo gris claro */
+            overflow: hidden; /* Evita el desplazamiento durante la animación de carga */
+        }
+        .navbar {
+            background-color: #2ecc71; /* Verde esmeralda */
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff; /* Blanco para el texto de los enlaces */
+        }
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #ffffff; /* Blanco para el enlace activo */
+        }
+        .text-center h1 {
+            color: #2ecc71; /* Verde esmeralda para el título */
+        }
+        .form-control {
+            border-color: #dcdcdc; /* Gris claro para el borde de los campos de formulario */
+        }
+        .btn-primary {
+            background-color: #2ecc71; /* Verde esmeralda para el botón de enviar */
+            border-color: #2ecc71; /* Verde esmeralda para el borde del botón */
+        }
+        .btn-primary:hover {
+            background-color: #27ae60; /* Verde más oscuro al pasar el cursor */
+            border-color: #27ae60; /* Verde más oscuro para el borde del botón al pasar el cursor */
+        }
+        .btn-info {
+            background-color: #007bff; /* Azul para el botón de Facebook y Twitter */
+            border-color: #007bff; /* Azul para el borde del botón */
+        }
+        .btn-info:hover {
+            background-color: #0056b3; /* Azul oscuro al pasar el cursor */
+            border-color: #0056b3; /* Azul oscuro para el borde del botón al pasar el cursor */
+        }
+        .btn-danger {
+            background-color: #dc3545; /* Rojo para el botón de Instagram */
+            border-color: #dc3545; /* Rojo para el borde del botón */
+        }
+        .btn-danger:hover {
+            background-color: #c82333; /* Rojo oscuro al pasar el cursor */
+            border-color: #c82333; /* Rojo oscuro para el borde del botón al pasar el cursor */
+        }
+        .footer {
+            background-color: #2ecc71; /* Verde esmeralda para el pie de página */
+            color: #ffffff; /* Blanco para el texto del pie de página */
+        }
+        /* Animación de entrada */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo de la Escuela" style="height: 50px;"> <!-- Logo -->
+                Escuela ABC
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <section>
+            <h1 class="text-center fade-in">Contáctanos</h1>
+            <form class="fade-in">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+        <section class="mt-5 text-center fade-in">
+            <h2>Síguenos en Redes Sociales</h2>
+            <a href="https://www.facebook.com/elvis.corrales.71?mibextid=JRoKGi" class="btn btn-info m-2">Facebook</a>
+            <a href="https://www.tiktok.com/@alexandercorrales347?is_from_webapp=1&sender_device=pc" class="btn btn-info m-2">Tik Tok</a>
+            <a href="https://www.instagram.com/alex.corrales.347?igsh=amU0dnBjaDluZ2Ni" class="btn btn-danger m-2">Instagram</a>
+        </section>
+    </main>
+    <footer class="footer text-white text-center py-3">
+        <p>&copy; 2024 Escuela ABC - Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/jquery.min.js"></script> <!-- jQuery local -->
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS local -->
+</body>
+</html>

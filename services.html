@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Escuela ABC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="styles.css"> <!-- Estilo personalizado -->
+    <style>
+        body {
+            background-color: #f5f5f5; /* Fondo gris claro */
+            overflow: hidden; /* Evita el desplazamiento durante la animación de carga */
+        }
+        .navbar {
+            background-color: #2ecc71; /* Verde esmeralda */
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff; /* Blanco para el texto de los enlaces */
+        }
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #ffffff; /* Blanco para el enlace activo */
+        }
+        .text-center h1 {
+            color: #2ecc71; /* Verde esmeralda para el título */
+        }
+        .card {
+            border: 1px solid #e0e0e0; /* Borde gris claro para las tarjetas */
+        }
+        .card-body {
+            background-color: #ffffff; /* Fondo blanco para el contenido de las tarjetas */
+        }
+        .card-title {
+            color: #2ecc71; /* Verde esmeralda para el título de la tarjeta */
+        }
+        .card-text {
+            color: #333; /* Gris oscuro para el texto de la tarjeta */
+        }
+        .footer {
+            background-color: #2ecc71; /* Verde esmeralda para el pie de página */
+            color: #ffffff; /* Blanco para el texto del pie de página */
+        }
+        /* Animación de entrada */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo de la Escuela" style="height: 50px;"> <!-- Logo -->
+                Escuela ABC
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <section>
+            <h1 class="text-center fade-in">Nuestros Servicios</h1>
+            <div class="row">
+                <div class="col-md-4 fade-in">
+                    <div class="card">
+                        <img src="images/1.jpg" class="card-img-top" alt="Servicio 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Educación Primaria</h5>
+                            <p class="card-text">Nuestro programa de educación primaria proporciona una sólida base en todas las materias fundamentales, incluyendo matemáticas, ciencias, y lenguaje.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="card">
+                        <img src="images/2.jpg" class="card-img-top" alt="Servicio 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Educación Secundaria</h5>
+                            <p class="card-text">Ofrecemos un programa integral de secundaria que prepara a los estudiantes para los desafíos académicos y les proporciona las habilidades necesarias para el éxito en la educación superior.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="card">
+                        <img src="images/e.jpg" class="card-img-top" alt="Servicio 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Actividades Extracurriculares</h5>
+                            <p class="card-text">Nuestras actividades extracurriculares permiten a los estudiantes explorar nuevas áreas de interés y desarrollar habilidades adicionales fuera del aula.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer text-white text-center py-3">
+        <p>&copy; 2024 Escuela ABC - Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/jquery.min.js"></script> <!-- jQuery local -->
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS local -->
+</body>
+</html>

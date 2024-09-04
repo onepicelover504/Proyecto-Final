@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Escuela ABC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="styles.css"> <!-- Estilo personalizado -->
+    <style>
+        body {
+            background-color: #f5f5f5; /* Fondo gris claro */
+            overflow: hidden; /* Evita el desplazamiento durante la animación de carga */
+        }
+        .navbar {
+            background-color: #2ecc71; /* Verde esmeralda */
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff; /* Blanco para el texto de los enlaces */
+        }
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #ffffff; /* Blanco para el enlace activo */
+        }
+        .text-center h1 {
+            color: #2ecc71; /* Verde esmeralda para el título */
+        }
+        .text-primary {
+            color: #2ecc71 !important; /* Verde esmeralda para los títulos de entrada del blog */
+        }
+        .text-muted {
+            color: #6c757d; /* Gris oscuro para la fecha de publicación */
+        }
+        .footer {
+            background-color: #2ecc71; /* Verde esmeralda para el pie de página */
+            color: #ffffff; /* Blanco para el texto del pie de página */
+        }
+        /* Animación de entrada */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo de la Escuela" style="height: 50px;"> <!-- Logo -->
+                Escuela ABC
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <section>
+            <h1 class="text-center fade-in">Blog</h1>
+            <article class="mb-5 fade-in">
+                <h2 class="text-primary">Título de la Entrada</h2>
+                <p class="text-muted">Fecha de Publicación: 01/01/2024</p>
+                <p>Contenido de la entrada del blog. Aquí puedes compartir noticias, actualizaciones y artículos relacionados con la escuela.</p>
+            </article>
+            <article class="fade-in">
+                <h2 class="text-primary">Título de Otra Entrada</h2>
+                <p class="text-muted">Fecha de Publicación: 02/01/2024</p>
+                <p>Contenido de otra entrada del blog. Aquí puedes seguir compartiendo información interesante y relevante para tu audiencia.</p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer text-white text-center py-3">
+        <p>&copy; 2024 Escuela ABC - Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/jquery.min.js"></script> <!-- jQuery local -->
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS local -->
+</body>
+</html>
